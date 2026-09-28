@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CineLog - Mockup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>CineLog</h1>
+    <p>Jurnalul tău digital pentru filme.</p>
+    <p class="app-count">3 filme, dintre care 1 de văzut</p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Adaugă film</h2>
+      <form class="item-form">
+        <label>Titlu 
+          <input type="text" name="titlu" placeholder="Ex: Interstellar" />
+        </label>
+        <label>Gen
+          <select name="eticheta">
+            <option value="actiune">Acțiune</option>
+            <option value="comedie">Comedie</option>
+            <option value="drama">Dramă</option>
+            <option value="sf">SF</option>
+          </select>
+        </label>
+        <button type="submit">Adaugă</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Lista mea de filme</h2>
+      <!-- Când lista e goală: <p class="empty">Nu există niciun element.</p> -->
+      <ul class="item-list">
+        <!-- Card finalizat (Văzut) -->
+        <li class="item-card done">
+          <div>
+            <h3>Inception</h3>
+            <span class="badge badge-sf">SF</span>
+          </div>
+          <span class="status">Văzut</span>
+        </li>
+        <!-- Card finalizat (Văzut) -->
+        <li class="item-card done">
+          <div>
+            <h3>The Grand Budapest Hotel</h3>
+            <span class="badge badge-comedie">Comedie</span>
+          </div>
+          <span class="status">Văzut</span>
+        </li>
+        <!-- Card activ (De văzut) -->
+        <li class="item-card">
+          <div>
+            <h3>Dune: Part Two</h3>
+            <span class="badge badge-sf">SF</span>
+          </div>
+          <span class="status">De văzut</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="app-footer">Proiect Tehnologii Web - CineLog</footer>
+</body>
+</html>
